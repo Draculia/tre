@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+
+
+
+    <script>
+$(function(){
+    var n=document.getElementById('bbb');
+    var nn=n.offsetTop;
+    console.log(nn);
+    window.onscroll=function () {
+        var backTop=document.documentElement.scrollTop ||document.body.scrollTop;
+//            吸顶灯
+        if(backTop>=44){
+
+            n.style.position="fixed";
+//            n.style.marginTop="0";
+            n.style.top="-25px";
+//            n.style.left="0";
+            n.style.zIndex="10";
+
+        }
+        else {
+            n.style.position="";
+        }
+    }})
+
+    </script>
+
+
+
+<div id="aaa" style="border:1px solid black;width:1000px;height:1500px;overflow:auto">
+    <div id="bbsb" style="border:1px solid black;width:800px;height:20px;float: left;position: fixed;"></div>
+    <div id="bbb" style="border:1px solid black;width:800px;height:100px;margin-top:55px"></div>
+</div><br>
+<button>垂直滚动条的位置设置为100px</button>
+
+</body>
+</html>
+

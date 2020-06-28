@@ -1,0 +1,61 @@
+/*.head-menu  dt*/
+/*{*/
+    /*font-family: 微软雅黑;*/
+    /*font-size: 18px;*/
+    /*list-style: none;*/
+    /*!*color:#006bb7;*!*/
+    /*display: inline-block;*/
+    /*height:40px;*/
+    /*!*float:left;*!*/
+    /*!*width: 46px;*!*/
+    /*margin-left: 18px;*/
+    /*!*padding-left: 10px;*!*/
+    /*padding-right: 10px;*/
+    /*cursor: pointer;*/
+    /*position: relative;*/
+/*}*/
+/*.head-menu  dt td:hover{color:#006bb7;}*/
+/*!*,.movie,.technology,.dance,.liveStreaming,.food,.live1,.music,.sports,.star,.game,.novel,.fishPonds,.philosophy*!*/
+/*.animation ,.mad{*/
+    /*!*display: inline-block;*!*/
+    /*position: relative;*/
+
+/*}*/
+/*!*,.movie1,.technology1,.dance1,.liveStreaming1,.food1,.live11,.music1,.sports1,.star1,.game1,.novel1,.fishPonds1,.philosophy1*!*/
+/*#fanju,.mad1{*/
+    /*height: 120px;*/
+    /*!*display: none;*!*/
+    /*color: black;*/
+    /*position: relative;*/
+    /*z-index: 10;*/
+    /*line-height: 40px;*/
+    /*margin-top: 10px;*/
+    /*float: left;*/
+    /*!*overflow: hidden;*!*/
+    /*background-color: hsla(0,0%,100%,.9);*/
+    /*box-shadow: 0 3px 3px rgba(0,0,0,.1);*/
+    /*border: 1px solid black;*/
+    /*border-radius: 0 0 3px 3px;*/
+/*}*/
+/*!*,.movie1,.technology1,.dance1,.liveStreaming1,.food1,.live11,.music1,.sports1,.star1,.game1,.novel1,.fishPonds1,.philosophy1*!*/
+/*#fanju dd li{*/
+
+    /*font-family: 微软雅黑;*/
+    /*font-size: 18px;*/
+    /*list-style-type: none;*/
+    /*!*color:#006bb7;*!*/
+    /*!*display: none;*!*/
+    /*height:40px;*/
+    /*display: inline-block;*/
+    /*!*float:left;*!*/
+    /*!*padding-left: 10px;*!*/
+    /*padding-right: 10px;*/
+    /*cursor: pointer;*/
+    /*position: relative;*/
+/*}*/
+/*!*,.movie1,.technology1,.dance1,.liveStreaming1,.food1,.live11,.music1,.sports1,.star1,.game1,.novel1,.fishPonds1,.philosophy1 ul{*!*/
+
+/*#fanju ul{*/
+
+    /*height: 120px;*/
+/*}*/

@@ -1,0 +1,100 @@
+.register-box{
+    width: 980px;
+    height: 600px;
+    margin: 80px auto;
+    /*border: 1px solid black;*/
+}
+#nameSet{
+    width: 420px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 80px;
+    position: relative;
+}
+#passwordSet{
+    width: 420px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 40px;
+    position: relative;
+}
+#informTip1{
+    width: 180px;
+    height: 40px;
+   display: inline-block;
+    margin-left: 10px;
+    margin-top: 90px;
+    position: absolute;
+}
+#informTip2{
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 55px;
+    position: absolute;
+}
+#form-b{
+    width: 940px;
+    height: 920px;
+    margin: 0 auto;
+}
+#tel {
+    !important;
+    width: 300px;
+    height: 30px;
+    /*margin-top: 55px;*/
+    /*margin-left: 200px;*/
+    margin-top: 80px;
+    position: relative;
+}
+#tel2{
+    width: 300px;
+    height: 30px;
+    /*margin-top: 55px;*/
+    /*margin-left: 200px;*/
+    margin-top: 0;
+    padding-top: 10px;
+    position: absolute;
+    float: left;
+}
+.form-group{
+    float: left;
+    margin-top: 20px;
+    height: 30px;
+}
+#selectC{
+    float: left;
+    margin-top: 0;
+    margin-left:200px;
+    height: 40px;
+    width: 120px;
+}
+#head5{
+    border: 1px solid rgb(255,255,255);
+    margin-top: 0;
+    float: right;
+    font-size: 20px;
+    margin-right: 65px;
+    width:123px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgb(51,180,222);
+}
+.button-box{
+   width: 500px;
+    height: 50px;
+    float: left;
+   margin-left: 200px;
+    margin-top: 30px;
+    /*border: 1px solid black;*/
+    position: relative;
+ }
+#head6{
+
+    width: 430px;
+    height: 40px;
+    float: left;
+    margin-left: 200px;
+
+}

@@ -1,0 +1,50 @@
+#dl-first{
+    width:100%;
+    height:70px;
+    float: left;
+    position:relative;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding-left: 0;
+}
+#dl-first li{
+    font-family: 微软雅黑;
+    font-size: 19px;
+    list-style: none;
+    width: 60px;
+    /*display: inline-block;*/
+    height:40px;
+    float:left;
+    margin-left: 8px;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 10px;
+}
+#dl-first dt:hover{
+color:#006bb7;
+}
+#dl-first dd{
+    margin-left: 10px;
+
+ }
+
+dd:hover{
+    color:#006bb7;
+}
+#dl-first dl{
+    /*width: auto;*/
+    height: auto;
+    display: none;
+    color: black;
+    position: relative;
+    z-index: 10;
+    line-height: 40px;
+    margin-top: 10px;
+    float: left;
+    /*overflow: hidden;*/
+    background-color: hsla(0,0%,100%,.9);
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    /*border: 1px solid black;*/
+    border-radius: 0 0 3px 3px;
+}

@@ -1,0 +1,225 @@
+/*导航栏*/
+#bili-centerBox{
+    width: 1600px;
+    margin: 0 auto;
+    height: 66px;
+
+}
+.header-data{
+    line-height: 46px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 66px;
+    font-size: 12px;
+    z-index: 9999999999999999;
+}
+#bili-icon{
+    width: 85px;
+    height: 39px;
+    float: left;
+
+    margin-top: 15px;
+    background: url("../imagine/nili-biog.jpg" ) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+/*#icon-shop{*/
+    /*width: 50px;*/
+    /*height: 19px;*/
+    /*float: left;*/
+    /*background: url("../imagine/house.png");*/
+/*}*/
+.head2{
+    padding-top: 10px;
+    float: left;
+    font-size: 18px;
+    margin-left: 40px
+
+}
+.head2 span{
+    font-size: 18px
+}
+#head3{
+    padding-top: 10px;
+    float: left;
+    font-size: 20px;
+    margin-left: 270px
+
+
+}
+#head4{
+    padding-top: 10px;
+    float: left;
+    font-size: 20px;
+    margin-left: 2% ;
+
+}
+#head5{
+    border: 1px solid rgb(251,114,153);
+   margin-top: 10px;
+    float: left;
+    font-size: 20px;
+    margin-left: 140px;
+    width:120px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: rgb(251,114,153);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title-imagine{
+    background-image:  url(../imagine/background.png);
+}
+#head-mid{
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    border: 1px solid #e7e7e7;
+    /*position: fixed;*/
+    /*z-index: 9999;*/
+    background-color: rgb(255,255,255);
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    /*border-right: 1px solid #e7e7e7;*/
+}
+#head-mid2{
+    width: 1600px;
+    height: 100%;
+    margin: 0  auto;
+
+}
+.head-block
+{      width:100%;
+    height:250px;
+
+
+    margin-top: 66px;
+    /*margin: 0 auto;*/
+    position: relative;
+    /*z-index: 0;*/
+    /*min-height: 155px;*/
+    /*height: calc(100vw * 0.09375);*/
+
+    /*background-color: #f9f9f9;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center 0;*/
+    background-size: cover;
+
+    z-index: -1;
+}
+.head-logo{
+    height: 250px;
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+
+    z-index: 0;
+}
+.title-imagine{
+    z-index: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    /*height: 1400px;*/
+    width: 100%;
+    /*width:1400px;*/
+    max-width:100%;
+    max-height: 100%;
+    min-width: 250px;
+    background-size: cover;
+    background-position: center 0;
+    /*width: 1500px;*/
+    /*height:120px;*/
+
+}
+/*.head-icon{*/
+/*width: 10%;*/
+/*height: 60px;*/
+/*margin-left: 20%;*/
+
+/*float: left;*/
+/*background-image: url("../imagine/.png");*/
+/*background-repeat: no-repeat;*/
+/*position: relative;*/
+/*}*/
+.head-menu
+{
+
+    width:1328px;
+    height:70px;
+    float: left;
+    position:relative;
+    border-left: 1px solid #e7e7e7;
+    /*border-right: 1px solid #e7e7e7;*/
+
+}
+
+.head-little-logo {
+    /*position: absolute;*/
+    /*width:200px;*/
+    /*height:120px;*/
+    /*min-height: 600px;*/
+    /*bottom: 2000px;*/
+    position: absolute;
+    width: 15%;
+    height: 35%;
+    min-height: 60px;
+    margin-top: 100px;
+    background: url("../imagine/bil-summer.png");
+
+
+
+}
+
+ul li:hover{color:#006bb7;}
+.yangshi-logn
+{
+    list-style: none;
+    color:white;
+    display: inline-block;
+
+    float:right;
+
+}
+
+.foot{
+    width:100%;
+    height:150px;
+
+
+    background-color:#006bb7
+}
+#top{
+    position:fixed;
+    height: 90px;
+    left:20px;
+
+    bottom:150px;
+
+    width:117px;
+}
+#top span{
+    text-align: center;
+    color: #0480be;
+    font-size: 20px;
+    font-weight: bold;
+}

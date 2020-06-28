@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li id="add">
+        <li id="remove">
+        <li id="move">
+        <li id="select">
+        <li class="row1"  style="z-index: 10">
+            <img id="r1" src="../imagine/row1img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 132px;   border-radius: 5px;">
+            <span class="video-title text-overflow " >【李云龙】狂浪</span>
+            <div class="displayBlock" id="r11">
+                <span class="displaySpan "  ></span>
+                <p>【李云龙】狂浪</p><p>&emsp;up:xxxx</p>
+                <p>
+                    <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;15199&emsp;&emsp;
+
+                    <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;366
+                </p>
+
+            </div>
+        </li>
+    </ul>
+
+</div>
+<script>
+    var oBox = document.getElementById('box');
+    oBox.onclick = function(e) {
+        var e = e || window.event;
+        var target = e.target || e.srcElement;
+        if (target.nodeName.toLowerCase() == 'img') {
+            switch (target.id) {
+                case 'add':
+                    alert('添加');
+                    break;
+                case 'r1':
+                    alert('添加');
+                    break;
+                case 'remove':
+                    alert('删除');
+                    break;
+                case 'move':
+                    alert('移动');
+                    break;
+                case 'select':
+                    alert('选择');
+                    break;
+
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

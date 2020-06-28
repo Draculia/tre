@@ -1,0 +1,283 @@
+
+.loginBackground{
+    width:980px;
+    height: 100%;
+    background: url("../imagine/rogin-img.png") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.background{
+    width: 100%;
+    height: 86px;
+    background-color: rgb(0,160,216);
+
+}
+a{
+    text-decoration: none;
+}
+.login-block a{
+    color: #00a7de;
+}
+
+.title-line {
+    width: 980px;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto ;
+    text-align: center;
+}
+.login-box{
+    position: relative;
+    width: 1080px;
+    margin: 30px auto;
+    height: 664px;
+
+}
+.left{
+    width: 50%;
+    height: 420px;
+
+    margin-top: 10%;
+    margin-left: 20px;
+    float: left;
+    border-right: 1px solid grey;
+}
+.left-img{
+    width: 260px;
+    height: 220px;
+    background: url("../imagine/QR-coo.png") no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+}
+.left-img:hover{
+
+    width: 480px;
+    height: 192px;
+    background: url("../imagine/login-check.png") no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    transition: 1s;
+}
+.bili-img{
+    height: 175px;
+    width: 545px;
+    position: absolute;
+    margin-bottom: 10px;
+    background: url("../imagine/2233login.png") no-repeat;
+    margin-left: 20px;
+}
+.bili-img p{
+    padding-right: 45px;
+    padding-top: 20px;
+    text-align: center;
+    color: darkgrey;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.right{
+    width: 48%;
+    height: 420px;
+
+    margin-top: 10%;
+
+    float: right;
+
+}
+.login-block{
+    width: 95%;
+    height:80% ;
+
+    margin: 40px auto;
+}
+.login-block span{
+    padding-left: 25px;
+
+}
+#form-a{
+    margin: 10px auto;
+}
+.method{
+    color: #428BCA;
+}
+#user-name{
+    width: 80%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 10px ;
+}
+#password{
+    width: 80%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 30px ;
+}
+#remember{
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+#login{
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 30px ;
+    background-color: #00a7de;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+}
+#login:hover{
+    background-color: #00bee7;
+}
+#create{
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    /*border: 1px solid #ddd;*/
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 30px ;
+    border: 1px solid gainsboro;
+    color: darkslategray;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+#create:hover{
+    background-color: rgb(247,247,247);
+}
+.foot{
+    width: 100%;
+    height: 198px;
+    background-color: rgb(236,236,236);
+    float: left;
+    padding: 20px 0;
+    /*margin-top: 100px;*/
+    /*margin: 0 auto;*/
+}
+.foot-container{
+    position: relative;
+    width: 1600px;
+    /*height: 100%;*/
+    /*float: left;*/
+    margin:  0 auto;
+    /*border: 1px solid black;*/
+}
+.foot a{
+    color: black;
+}
+.foot #block1{
+    width: 30%;
+    height:150px;
+    margin-left: 50px;
+    float: left;
+}
+.foot #block1 li{
+    font-size: 17px;
+    list-style: none;
+    width:33%;
+    float: left;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.foot #block1 li:hover{
+    cursor: pointer;
+    color: #00a7de;
+}
+.foot #block2{
+    width: 30%;
+    height:150px;
+    margin-left: 50px;
+    float: left;
+
+}
+.foot #block2 li{
+    font-size: 17px;
+    list-style: none;
+    width:33%;
+    float: left;
+    padding-top: 20px;
+    line-height: 20px;
+
+}
+.foot #block2 li,a:hover{
+    cursor: pointer;
+    color: #00a7de;
+}
+.foot #block3{
+    width: 30%;
+    height:150px;
+
+    float: left;
+
+}
+.foot #block3 #icon1-block{
+    width: 30%;
+    height: 110px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.foot #icon1{
+    width: 60px;
+    height: 60px;
+    background: url("//static.hdslb.com/images/base/icons.png") no-repeat -1024px -194px;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+.foot #block3 #icon2-block{
+    width: 30%;
+    height: 110px;
+    float: left;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+.foot #icon2{
+    width: 60px;
+    height: 60px;
+    background: url("//static.hdslb.com/images/base/icons.png") no-repeat -1024px -320px;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.foot #block3 #icon3-block{
+    width: 30%;
+    height: 110px;
+    float: left;
+
+    margin-top: 20px;
+
+}
+.foot #icon3{
+    width: 60px;
+    height: 60px;
+    background: url("//static.hdslb.com/images/base/icons.png") no-repeat -1024px -64px;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.foot p{
+    margin-top: 10px;
+    cursor: pointer;
+    padding-top: 60px;
+    text-align: center;
+
+}
+.foot p:hover{
+    color: #00bee7;
+}
