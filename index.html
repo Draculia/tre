@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cilicili视频弹幕网</title>
+    <meta name="" content="cilicili是不知名的视频弹幕网站，这里有最不及时的动漫新番，一般的ACG氛围，只有我一个Up主。大家可以在这里找到许多欢乐。">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="chenchuang" content="Bilibili,哔哩哔哩,哔哩哔哩动画,哔哩哔哩弹幕网,弹幕视频,B站,弹幕,字幕,AMV,MAD,MTV,ANIME,动漫,动漫音乐,游戏,游戏解说,二次元,游戏视频,ACG,galgame,动画,番组,新番,初音,洛天依,vocaloid,日本动漫,国产动漫,手机游戏,网络游戏,电子竞技,ACG燃曲,ACG神曲,追新番,新番动漫,新番吐槽,巡音,镜音双子,千本樱,初音MIKU,舞蹈MMD,MIKUMIKUDANCE,洛天依原创曲,洛天依翻唱曲,洛天依投食歌,洛天依MMD,vocaloid家族,OST,BGM,动漫歌曲,日本动漫音乐,宫崎骏动漫音乐,动漫音乐推荐,燃系mad,治愈系mad,MAD MOVIE,MAD高燃">
+    <link rel="icon" href="../imagine/bachongyin.jpg">
+    <title>cilicili弹幕网</title>
+    <link rel="stylesheet" href="../css/head.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/rank.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/swiper.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/rank.js"></script>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<style>
+    .body{
+        width: 100%;
+        height: auto;
+
+    }
+    @media screen and (max-width: 767px)  {
+        body{
+            width: 100%;
+        }
+    }
+</style>
+<body onload="getNews();a()">
+
+<!--头部-->
+<div >
+    <div class="head header-data" style="position: fixed">
+        <div id="bili-centerBox">
+            <div id="bili-icon"></div>
+            <a class="head2" target="_blank" href="https://taobao.com/" style="margin-left: 40px"><span id=" ixcon-shop" style="float: left;margin-top: 6px"><img src="../imagine/house.png" height="25" width="25"/></span><span>周边商城</span></a>
+            <a class="head2" target="_blank" href="https://taobao.com/"><span>会员购</span></a>
+            <a class="head2" target="_blank" href="https://taobao.com/"><span>直播</span></a>
+            <a class="head2" target="_blank" href="https://taobao.com/"><span>漫画</span></a>
+            <a class="head2" target="_blank" href="https://taobao.com/"><span>赛事</span></a>
+            <form class="navbar-form navbar-left" style="float: left;width: 400px">
+                <div class="form-group" style="margin-left: 50px;margin-top: 5px">
+                    <input type="text" class="form-control" placeholder="211806304陈创" style="margin-left: 170px">
+                </div>
+                <!--<button type="submit" class="btn btn-default" style="float: left;width:65px;height: 43px;"></button>-->
+            </form>
+            <a id="head3" target="_blank" href="login.html"><span>登录</span></a>
+            <a id="head4" target="_blank" href="register.html"><span>注册</span></a>
+            <button id="head5"><span style="font-size: 23px;color: #fafafa">投稿</span></button>
+        </div>
+    </div>
+    <div class="head-block">
+        <div class="title-imagine">
+            <div class="head-logo">
+                <div class="head-little-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--主体-->
+    <div class="center">
+        <div id="head-mid" >
+            <div id="head-mid2">
+                <div class="icon3">
+                    <ul>
+                        <li><img src="../imagine/icon-1.png" height="38" width="40"/>首页</li>
+                        <li><img src="../imagine/icon-2.png" height="38" width="40"/>动态</li>
+                        <li><img src="../imagine/icon-3.png" height="38" width="40"/>排行榜</li>
+                        <li><img src="../imagine/icon-4.png" height="38" width=40/>频道</li></ul>
+                </div>
+                <div class="head-menu" >
+
+                    <ul id="dl-first">
+                        <li >首页</li>
+                        <li class="animation" >番剧
+                            <dl id="fanju">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd >国漫</dd>
+                                <dd >日漫</dd>
+                                <dd >欧美动画</dd>
+
+                            </dl>
+                        </li>
+                        <li class="mad" >鬼畜
+                            <dl class="mad1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd>鬼畜调教</dd>
+                                <dd>音mad</dd>
+                                <dd>人力vocaloid</dd>
+                                <dd>教程演示</dd>
+
+                            </dl>
+                        </li>
+                        <li class="movie">放映厅
+                            <dl class="movie1">
+                                <dt style=" padding-left: 0;"> </dt>
+                                <dd class="lli">纪录片</dd>
+                                <dd class="lli">电影</dd>
+                                <dd class="lli">电视剧</dd>
+
+                            </dl></li>
+                        <li class="philosophy">哲学
+                            <dl class="philosophy1">
+                                <dt style=" padding-left: 0;">  </dt>
+                                <dd class="lli">配音</dd>
+                                <dd class="lli">小剧场</dd>
+                                <dd class="lli">欧美动作片</dd>
+
+                            </dl></li>
+                        <li class="technology">科技
+                            <dl class="technology1">
+                                <dt style=" padding-left: 0;"> </dt>
+                                <dd class="lli">科技制造</dd>
+                                <dd class="lli">演讲·公开课</dd>
+                                <dd class="lli">人文科普</dd>
+                                <dd class="lli">汽车</dd>
+
+                            </dl></li>
+                        <li class="dance">舞蹈
+                            <dl class="dance1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">国漫</dd>
+                                <dd class="lli">日漫</dd>
+                                <dd class="lli">欧美动画</dd>
+
+                            </dl></li>
+                        <li class="liveStreaming">直播
+
+                            <dl class="liveStreaming1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">宅舞</dd>
+                                <dd class="lli">街舞</dd>
+                                <dd class="lli">中国舞</dd>
+                                <dd class="lli">明星舞</dd>
+
+                            </dl></li>
+                        <li class="food">美食圈
+
+                            <dl class="food1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">中餐</dd>
+                                <dd class="lli">日式</dd>
+                                <dd class="lli">韩式</dd>
+                                <dd class="lli">欧美</dd>
+                                <dd class="lli">泰式</dd>
+
+                            </dl></li>
+                        <li class="live">生活
+                            <dl class="live1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">搞笑</dd>
+                                <dd class="lli">日常</dd>
+                                <dd class="lli">手工</dd>
+                                <dd class="lli">绘画</dd>
+
+                            </dl></li>
+                        <li class="music">音乐
+                            <dl class="music1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">原创音乐</dd>
+                                <dd class="lli">翻唱</dd>
+                                <dd class="lli">v家</dd>
+                                <dd class="lli">mv</dd>
+
+                            </dl></li>
+                        <li class="sports">体育
+                            <dl class="sports1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">综合体育</dd>
+                                <dd class="lli">篮球</dd>
+                                <dd class="lli">足球</dd>
+                                <dd class="lli">极限竞技</dd>
+
+                            </dl></li>
+                        <li style="width: 10%" class="star">舞蹈·偶像
+                            <dl class="star1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">宅舞</dd>
+                                <dd class="lli">综合舞蹈</dd>
+                                <dd class="lli">偶像</dd>
+
+                            </dl></li>
+                        <li class="game">游戏
+                            <dl class="game1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">主机单机</dd>
+                                <dd class="lli">网络游戏</dd>
+                                <dd class="lli">电子竞技</dd>
+
+                            </dl></li>
+                        <li class="novel">动画
+                            <dl class="novel1">
+                                <dt style=" padding-left: 0;"> </dt>
+                                <dd class="lli">MAD`MMV</dd>
+                                <dd class="lli">短片手书</dd>
+                                <dd class="lli">手办模玩</dd>
+
+                            </dl></li>
+                        <li class="fishPonds">鱼塘
+                            <dl class="fishPonds1">
+                                <dt style=" padding-left: 0;"></dt>
+                                <dd class="lli">普法安全</dd>
+                                <dd class="lli">国防军事</dd>
+                                <dd class="lli">历史</dd>
+
+                            </dl></li>
+                        <!--<li class="yangshi-logn"><img src="../imagine/indetity.jpg" width="36" height="36" style="position:relative;down:40px"></li>-->
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="background-left" ></div>-->
+        <!--内容主体-->
+        <div class="background-center">
+
+
+            <!--轮播图-->
+            <div id="banner1">
+
+                <!--<div class="roll-block-img">-->
+                <!--<div class="roll-img">-->
+                <!--<ul>-->
+                <!--<li><img src="../imagine/roll1.jpg" height="220" width="620"/></li>-->
+                <!--&lt;!&ndash;<li><img src="imagine/roll2.jpg" height="220" width="620"/></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><img src="imagine/roll4.png"/></li>&ndash;&gt;-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--<div>-->
+                <div class="swiper-container" style="height: 290px">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../imagine/roll1.jpg" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="../imagine/roll2.jpg" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="../imagine/rollxxx.jpg" width="100%" height="100%"></div>
+                        <!--<div class="swiper-slide"><img src="../imagine/roll4.png" width="100%;" height="300"></div>-->
+                        <div class="swiper-slide"><img src="../imagine/rollx.jpg" width="100%;" height="100%"></div>
+                        <div class="swiper-slide"><img src="../imagine/rollxx.jpg" width="100%;" height="100%"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="banner-nav-bg"></div>
+
+            </div>
+            <div id="center-block-movie">
+                <ul>
+                    <li class="row1" >
+                        <img id="r1" src="../imagine/row1img.jpg" alt="" style="width: 250px;height: 132px;border-radius: 5px;">
+                            <a href="" class="video-title text-overflow " id="r111" >【李云龙】狂浪</a>
+                        <div class="displayBlock" id="r11">
+                            <span class="displaySpan " ></span>
+                            <p>【李云龙】狂浪</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;15199&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;366
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="row1" >
+                        <img id="r2" src="../imagine/row2img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 132px; border-radius: 5px;">
+                        <span class="video-title text-overflow" id="r222">【原创动画mv】永远的十七岁</span>
+                        <div class="displayBlock" id="r22">
+                            <span class="displaySpan " ></span>
+                            <p>【原创动画mv】永远的十七岁</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;62998&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;436
+                            </p>
+
+                        </div>
+                    </li>
+
+                    <li class="row1" ><img id="r3" src="../imagine/row3img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 132px; border-radius: 5px;">
+                        <span class="video-title text-overflow" id="r333">史蒂夫世界</span>
+                        <div class="displayBlock" id="r33">
+                            <span class="displaySpan " ></span>
+                            <p>【李云龙】狂浪</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;1730&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;27
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="row2" ><img id="r4" src="../imagine/row4img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 130px; border-radius: 5px;">
+                        <span class="video-title text-overflow" id="r444">五分钟了解动画概念及制作</span>
+                        <div class="displayBlock" id="r44">
+                            <span class="displaySpan " ></span>
+                            <p>&emsp;五分钟了解动画概念及制作</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;3762&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;2
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="row2" ><img id="r5" src="../imagine/row5img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 130px; border-radius: 5px;">
+                        <span class="video-title text-overflow" id="r555">乐高路虎终于可以跑起来了</span>
+                        <div class="displayBlock" id="r55" >
+                            <span class="displaySpan " ></span>
+                            <p>&emsp;乐高路虎终于可以跑起来了</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;3024&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;0
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="row2" ><img id="r6" src="../imagine/row6img.jpg" alt="最想听你说「我喜欢你」！冈妈新作《想哭的我戴上了猫的面具》MV" style="width: 250px;height: 130px; border-radius: 5px;">
+                        <span class="video-title text-overflow" id="r666">为何京紫如此令人期待</span>
+                        <div class="displayBlock" id="r66">
+                            <span class="displaySpan " ></span>
+                            <p>&emsp;为何京紫如此令人期待</p><p>&emsp;up:xxxx</p>
+                            <p>
+                                <img src="../imagine/play-icon.png" height="17" width="15"/>&nbsp;19342&emsp;&emsp;
+
+                                <img src="../imagine/collection-icon.png" height="16" width="16"/>&nbsp;201
+                            </p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="armBlock">
+                <div class="new-info-title" >
+                    <span><img src="../imagine/tuiguang.png" height="35" width="41"/></span>
+                    <p>推广</p>
+                </div>
+                <div id="row">
+                    <ul>
+                        <li><img src="../imagine/arm1.jpg" height="140" width="215"/>
+                        <p>一幅会动的郭煌乐舞壁画</p>
+                            <i>up:xxxx</i>
+                        </li>
+                        <li><img src="../imagine/arm2.gif" height="140" width="215"/>
+                            <p>要去往哪里？ 该去向何方</p>
+                            <i>up:xxxx</i></li>
+                        <li><img src="../imagine/arm3.jpg" height="140" width="215"/>
+                            <p>【非专业电台】游戏咖啡厅</p>
+                            <i>up:xxxx</i></li>
+                        <li><img src="../imagine/arm4.gif" height="140" width="215"/>
+                            <p>【独家】西安肉夹馍</p>
+                            <i>up:xxxx</i></li>
+                        <li><img src="../imagine/arm5.jpg" height="140" width="215"/>
+                            <p>【预告】vup世界读书馆</p>
+                            <i>up:xxxx</i></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="img-right">
+                <h1>“守望春天”</h1>
+                <p>全球抗击疫情公益绘画大赛线上颁奖</p>
+            </div>
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span style="margin-bottom: 5px"><img src="../imagine/rank.jpg" height="45" width="41" /></span>
+                    <p>排名</p>
+                    <div class="dateRank">
+                        <div class="lRank"><span>日榜</span></div>
+                        <div class="lRank"><span>周榜</span></div>
+                        <div class="lRank"><span>总榜</span></div>
+                        <div class="lRank"><span style="color: #b94a48">更多</span></div>
+                    </div>
+                </div>
+                <div class="first-row">
+                    <ul style="width: 1200px;height: 220px">
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/new10.jpg">
+                                <span>【AMV大赛冠军】</span>
+                            </div>
+                            <a class="a-t">【扭曲仙境】Gimme×Gimme【Malleus】</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/img2.gif">
+                                <span>绝地求生</span>
+                            </div>
+                            <a class="a-t">盘点那些steam上的热门游戏</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li> <div class="src-block">
+                            <img src="../imagine/img3.jpeg">
+                            <span>LPL盘点</span>
+                        </div>
+                            <a class="a-t">快速看完lpl夏季赛</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li><div class="src-block">
+                            <img src="../imagine/img5.jpg">
+                            <span>4k画质</span>
+                        </div>
+                            <a class="a-t">纯新人！你们白嫖会坐牢吗？</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li><div class="src-block">
+                            <img src="../imagine/img1.jpeg">
+                            <span>【舞蹈区】</span>
+                        </div>
+                            <a class="a-t">大制作高能预警！！！超甜仙女变身朋克风！！</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+                <div class="second-row">
+                    <ul>
+                        <li> <div class="src-block">
+                            <img src="../imagine/new14.jpg">
+                            <span>【魔禁手书】</span>
+                        </div>
+                            <a class="a-t">御坂御坂来了哦！（全 程 会 动）【通行禁止向】</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/new15.jpg">
+                                <span>【Deemo】</span>
+                            </div>
+                            <a class="a-t">古树旋律V1.5最难歌曲Top10</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+
+                        </li>
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/new16.jpg">
+                                <span>凹凸世界手书 Ga1ah1d</span>
+                            </div>
+                            <a class="a-t">"【凹凸世界手书/雷狮生贺】Ga1ahad and Scientific Witchery"</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/new17.jpg">
+                                <span>“Do you like rain?” </span>
+                            </div>
+                            <a class="a-t">I prefer you</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>         <div class="src-block">
+                            <img src="../imagine/new12.jpg">
+                            <span>你喜欢孤独吗？</span>
+                        </div>
+                            <a class="a-t">【伤感唯美MMD】孤独时倾听你的低语， 黑暗里泪水无声滑落。</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="news-block">
+
+                <div class="new-title">
+                    <div id="title-left"></div>
+                    <div id="title-right"></div>
+                </div>
+                <div class="" style="text-overflow:ellipsis;" id="new-list">
+
+                </div>
+            </div>
+
+            <div id="top" >
+                    <span href="javascript:" id="btn" style="cursor: pointer">
+                        <img src="../imagine/bilitop.jpg" height="77" width="117"/><span> 返回顶部</span></span>
+            </div>
+            <!--资讯-->
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span style="margin-bottom: 5px"><img src="../imagine/rank.jpg" height="45" width="41" /></span>
+                    <p>鱼塘</p>
+                </div>
+                <div class="first-row">
+                    <ul style="width: 1200px;height: 220px">
+                        <li>
+                            <div class="src-block">
+                                <img src="../imagine/fish1.jpeg">
+                                <span>【水山汉化】</span>
+                            </div>
+                            <a class="a-t">【水山汉化】美国经历 乔治W布什 2/2</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                            <img src="../imagine/fish2.png">
+                            <span>一拳超人</span>
+                            </div>
+                            <a class="a-t">一拳超人第二部分（海底王）</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li> <div class="src-block">
+                            <img src="../imagine/fish3.jpeg">
+                            <span>【冷眼看历史】</span>
+                            </div>
+                            <a class="a-t">英法美的绥靖</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li><div class="src-block">
+                            <img src="../imagine/fish4.jpeg">
+                            <span>【ravens】</span>
+                        </div>
+                            <a class="a-t">地下室改造大作战？</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li><div class="src-block">
+                            <img src="../imagine/fish5.png">
+                            <span>【8BIT桃花】</span>
+                        </div>
+                            <a class="a-t">非计划内视频，传输资料用</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+                <div class="second-row">
+                    <ul>
+                        <li> <div class="src-block">
+                            <img src="../imagine/fish6.gif">
+                            <span>【倚天屠龙记】</span>
+                        </div>
+                            <a class="a-t">聊聊这部27年前《倚天屠龙记魔教教主》的“黑暗”无忌。</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                            <img src="../imagine/fish7.gif">
+                            <span>【每日平安】</span>
+                            </div>
+                            <a class="a-t">治安奇葩事182</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+
+                        </li>
+                        <li>
+                            <div class="src-block">
+                            <img src="../imagine/fish8.jpeg">
+                            <span>【宅舞文艺复兴2020】</span>
+                            </div>
+                            <a class="a-t">"【窝窝头】Music Music 午后阳光敛，长裙翩翩掩~"</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>
+                            <div class="src-block">
+                            <img src="../imagine/fish9.gif">
+                            <span>【遇见新游】 </span>
+                        </div>
+                            <a class="a-t">别问，问就是十亿手柄的枪战梦想！</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                        <li>         <div class="src-block">
+                            <img src="../imagine/fish10.jpeg">
+                            <span>【小饮听阮咸】</span>
+                        </div>
+                            <a class="a-t">白居易：这是个啥乐器？！认识中国乐器阮咸</a>
+                            <div><a href="" class="a-h" >up:xxxx</a></div>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="rank2">
+                <div class="headrank"><span style=" font-weight: bold;">排行榜</span></div>
+                    <div class="headrank3">
+                    <div class="head-img"><span>1</span><img src="../imagine/src-big1.gif"/></div>
+                        <div class="head-rank-right">
+                            <p>【特惠喜+1】第115期 协议3</p>
+                            <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:老绅</a>
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+
+                        </div>
+                    </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>2</span><img src="../imagine/rank-head2.jpeg"/></div>
+                        <div class="head-rank-right">
+                            <p>【呐呐呐】呐呐呐（转粤语）</p>
+                            <a href="" class="a-h" style="margin-top: 0;color: grey" >up:lifyir</a>
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                        </div>
+
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>3</span><img src="../imagine/rank-head3.gif" height="80" width="140"/></div>
+                        <div class="head-rank-right">
+                            <p>【周榜】c哩周榜一起来看！</p>
+                            <a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                        </div>
+
+
+                </div>
+                <div id="rank-list"></div>
+            </div>
+            <div id="advertise"></div>
+            <div id="advertise2"></div>
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span><img src="../imagine/donghua.gif" height="35" width="41"/></span>
+                    <p>动画</p>
+                </div>
+                <div class="first-row2">
+                    <div class="src-big-block11">
+
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <img src="../imagine/after5.jpeg" height="310" width="462"/><span class="mask-video-icon">
+
+                   <img src="../imagine/播放白.png" height="100" width="100" style="margin-top: 200px;margin-left: 300px"/></span>
+                        <div class="bottom-block-big" style="font-size: 19px">
+                            <p >你能在至诚龙舟大赛里，吃到粽子吗~</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="20" width="20"/>&ensp;45.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>&ensp;1.5w</span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after6.gif" style=" width: 224px;height: 127px;">
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <div class="bottom-block">
+                            <p>【诸葛】秦王扫六合虎视何雄哉！</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after7.jpeg">
+                        <!--<span>挑战用一万根皮筋做篮球</span>-->
+                        <div class="bottom-block">
+                            <p>自制隐瞒之事op！（低配版）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after8.jpeg">
+                        <!--<span>埃及说唱手赫拉姆最新说唱</span>-->
+                        <div class="bottom-block">
+                            <p>【记忆碎片#8】满口胡话的正式首播它来了！</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/after9.jpeg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>【AMV】明天，明天一定可以再见面的！</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+
+                    <div class="src-big-block2">
+                        <img src="../imagine/after10.jpeg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>[MMD] 风月 (Haku)</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/after11.jpeg " style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>鬼灭之刃鳄鱼老师的咒术大战 [吾峠呼世晴短篇 蝇庭的锯形] </p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after12.jpeg" style=" width: 212px;height: 127px; margin-left: 0">
+                        <div class="bottom-block">
+                            <p>火影22：中忍考试决赛，宁次雷霆一击，施展日向宗家绝技！【独家】</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-2">
+                        <img src="../imagine/after13.jpeg" style=" width: 212px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>四川dio</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after14.gif" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>聊聊《佐贺偶像是传奇的》为啥那么好看</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after15.png" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【德语配音(双语字幕)】青春猪头少年不会梦到兔女郎学姐 官方剪辑 第七弹</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after16.jpg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【TSF/KRL】[假面骑士电王]全集+剧场版【BD1080P+720P+DVDrip】</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rank2">
+                <div class="headrank"><span style=" font-weight: bold;">排行榜</span></div>
+                <div class="headrank3">
+                    <div class="head-img"><span>1</span><img src="../imagine/mor7.png"/></div>
+                    <div class="head-rank-right">
+                        <p>【独家】写作乙女的《邪恶大小姐》，实则满足宅男猎奇心态的廉价动画</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:渣丸子</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+
+                    </div>
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>2</span><img src="../imagine/mor8.png"/></div>
+                    <div class="head-rank-right">
+                        <p>踩点高燃混剪《黑洞里的光》）</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:EKZ-MH</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>3</span><img src="../imagine/rank-head3.gif" height="80" width="140"/></div>
+                    <div class="head-rank-right">
+                        <p>七月新番《租借女友》先导PV</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+
+                </div>
+                <div id="rank-list2"></div>
+            </div>
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span><img src="../imagine/rank4.png" style="height:35px;width:41px;"/></span>
+                    <p>生活区</p>
+                </div>
+                <div class="first-row2">
+                    <div class="src-big-block11">
+
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <img src="../imagine/src-big1.jpg" height="310" width="462"/><span class="mask-video-icon">
+
+                   <img src="../imagine/播放白.png" height="100" width="100" style="margin-top: 200px;margin-left: 300px"/></span>
+                        <div class="bottom-block-big" style="font-size: 19px">
+                            <p >十三周年限定！联名木艺周边</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="20" width="20"/>&ensp;45.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>&ensp;1.5w</span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/life1.jpg">
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <div class="bottom-block">
+                            <p>一粒小麦竟能拉出屡屡金丝</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/life2.jpg">
+                        <!--<span>挑战用一万根皮筋做篮球</span>-->
+                        <div class="bottom-block">
+                            <p>一粒小麦竟能拉出屡屡金丝</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/life3.jpg">
+                        <!--<span>埃及说唱手赫拉姆最新说唱</span>-->
+                        <div class="bottom-block">
+                            <p>埃及说唱手赫拉姆最新说唱</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/src-block2.gif"style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>今天是采蘑菇的小火柴</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+
+                    <div class="src-big-block2">
+                        <img src="../imagine/src-big3.jepg.jpeg"style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>废了几十斤豆子，吃了两星期豆腐，豆腐脑终于可以出摊了~</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/src-big4.jepg.jpeg " style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>闪闪买了个30年前的手风琴，除了重量难顶外，她还遇到了人生中很大的挑战</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/1588492588692.gif" style=" width: 212px;height: 127px; margin-left: 0">
+                        <div class="bottom-block">
+                            <p>我这车开得怎么样？能打几分？</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-2">
+                        <img src="../imagine/after1.jpeg" style=" width: 212px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>厨师长解答：“炉灶的流动水不关”，不仅仅是“浪费水”这么简单</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after2.jpeg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>美国疫情还在爆发，为何民众开始持枪闹复工？</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after3.jpeg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>自从改造了这面墙，房东阿姨每天都请闺蜜们来参观</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after4.jpeg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【木易苏野趣】愿你我永远年轻，永远热泪盈眶</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rank2">
+                <div class="headrank"><span style=" font-weight: bold;">排行榜</span></div>
+                <div class="headrank3">
+                    <div class="head-img"><span>1</span><img src="../imagine/src-big1.gif"/></div>
+                    <div class="head-rank-right">
+                        <p>【特惠喜+1】第115期 协议3</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:老绅</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+
+                    </div>
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>2</span><img src="../imagine/rank-head2.jpeg"/></div>
+                    <div class="head-rank-right">
+                        <p>【呐呐呐】呐呐呐（转粤语）</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:lifyir</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>3</span><img src="../imagine/rank-head3.gif" height="80" width="140"/></div>
+                    <div class="head-rank-right">
+                        <p>【周榜】c哩周榜一起来看！</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+
+                </div>
+                <div id="rank-list3"></div>
+            </div>
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span><img src="../imagine/1509501653116.gif" height="35" width="41"/></span>
+                    <p>游戏区</p>
+                </div>
+                <div class="first-row2">
+                    <div class="src-big-block11">
+
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <img src="../imagine/after17.jpeg" height="310" width="462"/><span class="mask-video-icon">
+
+                   <img src="../imagine/播放白.png" height="100" width="100" style="margin-top: 200px;margin-left: 300px"/></span>
+                        <div class="bottom-block-big" style="font-size: 19px">
+                            <p >一分钟盘点低配电脑可以玩的五大3A游戏</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="20" width="20"/>&ensp;45.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>&ensp;1.5w</span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after18.jpeg">
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <div class="bottom-block">
+                            <p>大明竟然远洋美洲？看似星辰大海的路途却有暗流涌动</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after19.jpeg">
+                        <!--<span>挑战用一万根皮筋做篮球</span>-->
+                        <div class="bottom-block">
+                            <p>【主播真会玩】189： RNG退役选手放飞自我 凯哥因何大发雷霆？</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/after20.jpeg">
+                        <!--<span>埃及说唱手赫拉姆最新说唱</span>-->
+                        <div class="bottom-block">
+                            <p>徐老师来巡山271：爆炸果实虽好，可不能贪杯哦！</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/after21.jpeg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>饥饿鲨鱼世界 灭绝模式轻松刷珍珠</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+
+                    <div class="src-big-block2">
+                        <img src="../imagine/after22.jpg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>究竟是人性扭曲还是正道的光？</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/after23.jpg " style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>云顶之弈S3：三星露露和三星厄加特组成娃娃机，太快乐了哈哈哈！</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after24.png" style=" width: 212px;height: 127px; margin-left: 0">
+                        <div class="bottom-block">
+                            <p>高（下）光（饭）时刻录播，王者青铜无缝切换</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-2">
+                        <img src="../imagine/after25.jpeg" style=" width: 212px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>在烈火中永生</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after26.jpeg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【松鼠实况】逆转裁判123-成步堂精选集P26-②第一章完：失去的逆转（庭审篇二）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after27.gif" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【CSGO】6月25日直播剪辑 按4召唤敌人</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/after28.jpeg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>我的世界神奇宝贝剑盾</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rank2">
+                <div class="headrank"><span style=" font-weight: bold;">排行榜</span></div>
+                <div class="headrank3">
+                    <div class="head-img"><span>1</span><img src="../imagine/mor1.jpeg"/></div>
+                    <div class="head-rank-right">
+                        <p>【岂游此理Ⅱ】25 ：美末2割裂争议  摸鱼党政治正确</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:鸡鸡夫斯基</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+
+                    </div>
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>2</span><img src="../imagine/mor2.jpeg"/></div>
+                    <div class="head-rank-right">
+                        <p>【魂学研习者】29：恶魔之魂重制版特别篇
+                            </p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >UP:龙崎棒棒糖</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>3</span><img src="../imagine/mor3.jpeg" height="80" width="140"/></div>
+                    <div class="head-rank-right">
+                        <p>韩服最强王者菁英对决 #1418丨滑溜</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+
+                </div>
+                <div id="rank-list4"></div>
+            </div>
+            <div class="new-info">
+                <div class="new-info-title">
+                    <span><img src="../imagine/rank4.png" height="35" width="41"/></span>
+                    <p>影视区</p>
+                </div>
+                <div class="first-row2">
+                    <div class="src-big-block11">
+
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <img src="../imagine/after32.jpeg" height="310" width="462"/><span class="mask-video-icon">
+
+                   <img src="../imagine/播放白.png" height="100" width="100" style="margin-top: 200px;margin-left: 300px"/></span>
+                        <div class="bottom-block-big" style="font-size: 19px">
+                            <p >纪录片.历史频道.世界大战.S01E03.2014[IMDB 8.1][高清][英字]</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="20" width="20"/>&ensp;45.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>&ensp;1.5w</span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/movie1.jpg">
+                        <!--<span>一粒小麦竟能拉出屡屡金丝</span>-->
+                        <div class="bottom-block">
+                            <p>警察故事续集</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/movie2.jpg">
+                        <!--<span>挑战用一万根皮筋做篮球</span>-->
+                        <div class="bottom-block">
+                            <p>特遣队2011</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block1">
+                        <img src="../imagine/movie3.jpg">
+                        <!--<span>埃及说唱手赫拉姆最新说唱</span>-->
+                        <div class="bottom-block">
+                            <p>【剧情】搜索（2012）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/movie8.jpg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>旺角卡门（1988）【王家卫】</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+
+                    <div class="src-big-block2">
+                        <img src="../imagine/after29.png" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>宇宙的灭亡史</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2">
+                        <img src="../imagine/after30.jpeg" style=" width: 224px;height: 127px;">
+                        <!--<span>【绘画过程】在？为什么又画大头</span>-->
+                        <div class="bottom-block">
+                            <p>【纪录片.1080P】30 For 30 若水 Be Water（李小龙纪录片）机翻中字</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/movie7.jpg" style=" width: 212px;height: 127px; margin-left: 0">
+                        <div class="bottom-block">
+                            <p>指环王1：护戒使者（2001）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-2">
+                        <img src="../imagine/after31.jpeg" style=" width: 212px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【老爸/身为人父】【720P】【中英双字】</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/movie4.jpg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>我和我的祖国（2019）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/movie5.jpg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>【喜剧】港囧（2015）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                    <div class="src-big-block2-1">
+                        <img src="../imagine/movie6.jpg" style=" width: 224px;height: 127px;">
+                        <div class="bottom-block">
+                            <p>命运之夜--天之杯II（2019）</p>
+                            <!--<a href="" class="a-h" style="margin-top: 0;color: grey" >up:3344</a>-->
+                            <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>&ensp;1.2w</span>
+                            <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rank2">
+                <div class="headrank"><span style=" font-weight: bold;">排行榜</span></div>
+                <div class="headrank3">
+                    <div class="head-img"><span>1</span><img src="../imagine/mor4.jpeg"/></div>
+                    <div class="head-rank-right">
+                        <p>【1900】比剧集黑暗百倍，解读18万字原著《隐秘的角落》
+                            </p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:1900影剧室</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+
+                    </div>
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>2</span><img src="../imagine/mor5.jpeg"/></div>
+                    <div class="head-rank-right">
+                        <p>8.2分真低了！这种国产宝藏电影，看一部少一部！《立春》）</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" >up:何止电影</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+                </div>
+                <div class="headrank3">
+                    <div class="head-img"><span>3</span><img src="../imagine/mor6.jpeg" height="80" width="140"/></div>
+                    <div class="head-rank-right">
+                        <p>【阿斗】成本仅120万，全球收获1.03亿票房《电锯惊魂》为何被奉为经典</p>
+                        <a href="" class="a-h" style="margin-top: 0;color: grey" > UP:阿斗归来了</a>
+                        <span ><img src="../imagine/play--little-icon.png" height="17" width="17"/>1.2w</span>
+                        <span style="margin-left: 100px"><img src="../imagine/comments-icon.png" height="20" width="21"/>
+
+                            </span>
+                    </div>
+
+
+                </div>
+                <div id="rank-list5"></div>
+            </div>
+            <!--<div class="new-info">-->
+                <!--<div class="new-info-title">-->
+                    <!--<span><img src="../imagine/rank4.png" height="35" width="41"/></span>-->
+                    <!--<p>影视区</p>-->
+                <!--</div>-->
+                <!--<div class="first-row">-->
+                    <!--<div class="src-block">-->
+                        <!--<img src="../imagine/movie1.jpg">-->
+                        <!--<span>警察故事续集</span>-->
+
+
+                    <!--</div>-->
+                    <!--<div class="src-block">-->
+                        <!--<img src="../imagine/movie2.jpg">-->
+                        <!--<span>特遣队2011</span>-->
+                    <!--</div>-->
+                    <!--<div class="src-block">-->
+                        <!--<img src="../imagine/movie3.jpg">-->
+                        <!--<span>【剧情】搜索（2012）</span>-->
+                    <!--</div>-->
+                    <!--<div class="src-block">-->
+                        <!--<img src="../imagine/movie4.jpg">-->
+                        <!--<span>我和我的祖国（2019）</span>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="second-row">-->
+                    <!--<div class="src-block2">-->
+                        <!--<img src="../imagine/movie5.jpg">-->
+                        <!--<span>【喜剧】港囧（2015）</span>-->
+                    <!--</div>-->
+                    <!--<div class="src-block2">-->
+                        <!--<img src="../imagine/movie6.jpg">-->
+                        <!--<span>命运之夜&#45;&#45;天之杯II（2019）</span>-->
+
+                    <!--</div>-->
+                    <!--<div class="src-block2">-->
+                        <!--<img src="../imagine/movie7.jpg">-->
+                        <!--<span>指环王1：护戒使者（2001）</span>-->
+                    <!--</div>-->
+                    <!--<div class="src-block2">-->
+                        <!--<img src="../imagine/movie8.jpg">-->
+                        <!--<span>旺角卡门（1988）【王家卫】 </span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+            <!--<div class="rank">-->
+                <!--<div id="rank-1">-->
+
+
+                    <!--<div id="j-rank">日漫</div>-->
+                    <!--<div id="c-rank"> 国漫</div>-->
+                <!--</div>-->
+                <!--<div id="rank-2">-->
+                    <!--<div id="male-rank" onmousedown="colorChange()" onmouseup="styleMale()" >男生组</div>-->
+                    <!--&lt;!&ndash;注意div里的文字如果没加标签则不能执行DOM操作&ndash;&gt;-->
+                    <!--<div id="female-rank" onmouseover= "colorChange2()" onclick="styleFemale()">女生组</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div id="rank-style">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<table width="100%" id="rt">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<th>排名</th>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<th>姓名</th>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<th>普通票</th>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<th>真爱票</th>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<th>积分</th>&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;<tr style="color: #D9534F" >&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td><img src="../imagine/member-sort-1.png" height="24" width="30"/></td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr style="color: #FF9900">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td><img src="../imagine/member-sort-2.png" height="24" width="30"/></td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr style="color: #428BCA">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td><img src="../imagine/member-sort-3.png" height="24" width="30"/></td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>4</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>5</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>6</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>7</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>8</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>9</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>aila</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>14572</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>10375</td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<td>46879</td>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</table>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+
+        </div>
+
+    </div>
+    <!--<div class="background-right"></div>-->
+</div>
+
+<div class="foot">
+    <div class="foot-container">
+    <div id="block1">
+        <span style="color: gray;font-size: 20px;padding-left:40px ">cilicili</span>
+        <ul>
+            <li><a href="index.html" target="_blank">关于我们</a></li>
+            <li><a href="index.html" target="_blank">联系我们</a></li>
+            <li><a href="index.html" target="_blank">加入我们</a></li>
+            <li><a href="index.html" target="_blank">友情链接</a></li>
+            <li><a href="index.html" target="_blank">cilicili认证</a></li>
+            <li><a href="index.html" target="_blank">Investor relations</a></li>
+        </ul>
+    </div>
+    <div id="block2">
+        <span style="color: gray;font-size: 20px;padding-left:40px ">传送门</span>
+        <ul>
+            <li><a href="index.html" target="_blank">帮助中心</a></li>
+            <li><a href="index.html" target="_blank">高级弹幕</a></li>
+            <li><a href="index.html" target="_blank">活动专题页</a></li>
+            <li><a href="index.html" target="_blank">侵权申诉</a></li>
+            <li><a href="index.html" target="_blank">活动中心</a></li>
+            <li><a href="index.html" target="_blank">用户反馈论坛</a></li>
+            <li><a href="index.html" target="_blank">壁纸站</a></li>
+            <li><a href="index.html" target="_blank">名人堂</a></li>
+            <li><a href="index.html" target="_blank">专车号服务中心</a></li>
+        </ul>
+    </div>
+    <div id="block3">
+        <div id="icon1-block">
+
+            <div id="icon1"></div>
+            <p>客户端下载</p>
+        </div>
+
+        <div id="icon2-block">
+
+            <div id="icon2"></div>
+            <p>新浪微博</p>
+        </div>
+        <div id="icon3-block">
+
+            <div id="icon3"></div>
+            <p>官方微信</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        autoplay: 2000,
+        speed: 1200,
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        effect: 'flip',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+        grabCursor: true,
+        cube: {
+            shadow: false,
+            slideShadows: false,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        }
+    });
+</script>
+</html>
