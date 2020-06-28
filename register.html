@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script src="../js/login.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css" style="!important;">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<!--<script>-->
+
+<!--function a(){-->
+<!--var name=document.getElementById('user-name');-->
+<!--var password=document.getElementById('password');-->
+<!--if(name==""||password==""){-->
+<!--alert("账户名或密码不能为空！");-->
+<!--}-->
+<!--else {-->
+<!--alert("登陆成功！");-->
+<!--}-->
+
+<!--}-->
+
+<!--</script>-->
+<script>
+
+
+    $(document).ready(function() {
+        $("input").focus(function () {
+            $("input").css("background-color", "#FFFFCC");
+        });
+        $("input").blur(function () {
+            $("input").css("background-color", "rgb(240,240,240)");
+            $("input").css("color", "grey");
+        });
+    });
+</script>
+<body>
+
+<!--头部-->
+<div class="background">
+    <div class="loginBackground"></div>
+    <div class="title-line">
+        <span class="tit" style="font-size: 38px;">注册</span>
+    </div>
+
+</div>
+
+<!--中间-->
+<div class="body1">
+    <div class="login-box">
+        <div class="register-box">
+            <form action="" id="form-b">
+                <input id="nameSet" type="text" placeholder="昵称" maxlength="15" ><span id="informTip1">请设置一个账户名</span></input>
+                <input id="passwordSet" type="text" placeholder="密码（6-16个字符组成，区分大小写）" maxlength="15" ><span id="informTip2">请输入密码</span></input>
+                <input type="text" name="" id="tel" placeholder="请输入手机号" style="margin-top: 20px;">
+                <form role="form">
+                    <div class="form-group">
+                        <label ></label>
+                        <select class="form-control" id="selectC">
+                            <option>北京市</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                   <div class="button-box">
+                       <input type="text" name="" id="tel2" placeholder="请输入短信验证码" >
+                        <button id="head5"><span style="font-size: 23px;color: #fafafa">点击获取</span></button>
+                  </div>
+                    <p style="float:left;padding-left: 50px;text-decoration-line: none;padding-top: 20px;letter-spacing: 2px;margin-left: 200px" >登录即代表你同意<a target="_blank" href="https://www.bilibili.com/protocal/licence.html" style="color: #00a7de;">用户协议</a>和<a target="_blank" href="https://www.bilibili.com/blackboard/privacy-pc.html">隐私政策</a></p>
+
+                    <button id="head6"><span style="text-align: center;font-size: 18px;">注册</span></button>
+
+                </form>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</div>
+<!--尾部-->
+<div class="foot">
+    <div id="block1">
+        <span style="color: gray;font-size: 20px;padding-left:40px ">cilicili</span>
+        <ul>
+            <li><a href="index.html" target="_blank">关于我们</a></li>
+            <li><a href="index.html" target="_blank">联系我们</a></li>
+            <li><a href="index.html" target="_blank">加入我们</a></li>
+            <li><a href="index.html" target="_blank">友情链接</a></li>
+            <li><a href="index.html" target="_blank">cilicili认证</a></li>
+            <li><a href="index.html" target="_blank">Investor relations</a></li>
+        </ul>
+    </div>
+    <div id="block2">
+        <span style="color: gray;font-size: 20px;padding-left:40px ">传送门</span>
+        <ul>
+            <li><a href="index.html" target="_blank">帮助中心</a></li>
+            <li><a href="index.html" target="_blank">高级弹幕</a></li>
+            <li><a href="index.html" target="_blank">活动专题页</a></li>
+            <li><a href="index.html" target="_blank">侵权申诉</a></li>
+            <li><a href="index.html" target="_blank">活动中心</a></li>
+            <li><a href="index.html" target="_blank">用户反馈论坛</a></li>
+            <li><a href="index.html" target="_blank">壁纸站</a></li>
+            <li><a href="index.html" target="_blank">名人堂</a></li>
+            <li><a href="index.html" target="_blank">专车号服务中心</a></li>
+        </ul>
+    </div>
+    <div id="block3">
+        <div id="icon1-block">
+
+            <div id="icon1"></div>
+            <p>客户端下载</p>
+        </div>
+
+        <div id="icon2-block">
+
+            <div id="icon2"></div>
+            <p>新浪微博</p>
+        </div>
+        <div id="icon3-block">
+
+            <div id="icon3"></div>
+            <p>官方微信</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!--末端-->
+</body>
+</html>
