@@ -157,10 +157,10 @@ function getNews() {
 $(function () {
     var $change= $('#dl-first');
     $change.find('li').mouseover(function () {
-        $(this).children('dl').show();
+        $(this).children('dl').stop(true,false).slideDown(200);
     });
     $change.find('li').mouseout(function () {
-        $(this).children('dl').hide();
+        $(this).children('dl').stop(true,false).slideUp(200);
     })
 });
 var swiper = new Swiper('.swiper-container', {
